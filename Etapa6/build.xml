@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ArmazemAgricula" default="run" basedir=".">
+    <!-- Caminho de compilação -->
+    <property name="src.dir" value="src"/>
+    <property name="build.dir" value="build"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="libs.dir" value="libs"/>
+
+    <!-- Dependências -->
+    <path id="classpath">
+        <fileset dir="${libs.dir}">
+            <include name="jfreechart-1.5.3.jar"/>
+            <include name="bcrypt-0.10.2.jar"/> <!-- Adicionando BCrypt -->
+            <include name="bytes-1.6.1.jar"/> <!-- Adicionando Bytes -->
+        </fileset>
+        <!-- Outras dependências podem ser adicionadas aqui -->
+    </path>
+
+    <!-- Inicializa o projeto -->
+    <target name="init">
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${dist.dir}"/>
+    </target>
+
+    <!-- Compila os arquivos fontes -->
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" destdir="${build.dir}/classes" classpathref="classpath"/>
+    </target>
+
+    <!-- Cria o arquivo JAR -->
+    <target name="jar" depends="compile">
+        <jar destfile="${dist.dir}/ArmazemAgricula.jar" basedir="${build.dir}/classes"/>
+    </target>
+
+    <!-- Executa o projeto -->
+    <target name="run" depends="jar">
+        <java jar="${dist.dir}/ArmazemAgricula.jar" fork="true"/>
+    </target>
+
+    <!-- Limpa os diretórios de build e dist -->
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+
+    <!-- Resolve as dependências utilizando Ivy (se você estiver usando Ivy) -->
+    <!-- Caso queira resolver dependências automaticamente, adicione Ivy -->
+    <!-- <target name="resolve" description="Resolve dependencies using Ivy">
+        <ivy:resolve/>
+    </target> -->
+
+</project>

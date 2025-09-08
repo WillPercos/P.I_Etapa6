@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0">
+    <info organisation="myorg" module="mymodule"/>
+    <dependencies>
+        <dependency org="org.jfree" name="jfreechart" rev="1.5.3"/>
+    </dependencies>
+</ivy-module>
+
