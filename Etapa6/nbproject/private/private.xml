@@ -3,27 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/dao/ItemDAO.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/model/Transacao.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/view/TelaAlertas.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/dao/UsuarioDAO.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/service/UsuarioService.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/dao/FuncionarioDAO.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/dao/AlertaDAO.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/app/Main.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/view/TelaDashboard.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/service/ItemService.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/service/TransacaoService.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/view/TelaRelatorios.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/service/FuncionarioService.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/view/TelaInventario.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/service/AlertaService.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/service/RelatorioService.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/view/TelaLogin.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/dao/RelatorioDAO.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/dao/TransacaoDAO.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/view/TelaTransacoes.java</file>
-            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/src/br/com/armazem/view/TelaPerfil.java</file>
+            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/Etapa6/test/br/com/armazem/service/ItemServiceTest.java</file>
+            <file>file:/C:/Atividades_Senac/UC015_PI/Etapa6/Etapa6/Etapa6/src/br/com/armazem/service/ItemService.java</file>
         </group>
     </open-files>
 </project-private>

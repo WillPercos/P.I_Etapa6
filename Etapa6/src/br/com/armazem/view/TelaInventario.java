@@ -51,11 +51,13 @@ public class TelaInventario extends JFrame {
         JTextField txtBuscarItem = new JTextField(20);
         JButton btnBuscar = new JButton("Buscar por Item");
         JButton btnDeletar = new JButton("Deletar Item");
+        JButton btnVoltar = new JButton("Voltar"); // Novo botão
 
         searchPanel.add(new JLabel("Nome do Item:"));
         searchPanel.add(txtBuscarItem);
         searchPanel.add(btnBuscar);
         searchPanel.add(btnDeletar);
+        searchPanel.add(btnVoltar); // Adiciona o novo botão
 
         panel.add(searchPanel, BorderLayout.SOUTH);
 
@@ -102,6 +104,12 @@ public class TelaInventario extends JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Selecione um item para deletar.");
             }
+        });
+
+        // Ação do novo botão
+        btnVoltar.addActionListener(e -> {
+            new TelaDashboard(usuario).setVisible(true);
+            dispose();
         });
 
         add(panel);

@@ -40,10 +40,12 @@ public class TelaTransacoes extends JFrame {
         JPanel searchPanel = new JPanel();
         JTextField txtBuscarTipo = new JTextField(15);
         JButton btnBuscar = new JButton("Buscar por Tipo");
+        JButton btnVoltar = new JButton("Voltar"); // Novo botão
 
         searchPanel.add(new JLabel("Tipo de Transação:"));
         searchPanel.add(txtBuscarTipo);
         searchPanel.add(btnBuscar);
+        searchPanel.add(btnVoltar); // Adiciona o novo botão
         panel.add(searchPanel, BorderLayout.SOUTH);
 
         btnBuscar.addActionListener(e -> {
@@ -66,6 +68,12 @@ public class TelaTransacoes extends JFrame {
                     JOptionPane.showMessageDialog(null, "Erro ao buscar transações: " + ex.getMessage());
                 }
             }
+        });
+
+        // Ação do novo botão
+        btnVoltar.addActionListener(e -> {
+            new TelaDashboard(usuario).setVisible(true);
+            dispose();
         });
 
         add(panel);

@@ -47,11 +47,13 @@ public class TelaAlertas extends JFrame {
         JTextField txtBuscarItem = new JTextField(20);
         JButton btnBuscar = new JButton("Buscar por Item");
         JButton btnMarcarResolvido = new JButton("Marcar como Resolvido");
+        JButton btnVoltar = new JButton("Voltar"); // Novo botão
 
         searchPanel.add(new JLabel("Nome do Item:"));
         searchPanel.add(txtBuscarItem);
         searchPanel.add(btnBuscar);
         searchPanel.add(btnMarcarResolvido);
+        searchPanel.add(btnVoltar); // Adiciona o novo botão
 
         panel.add(searchPanel, BorderLayout.SOUTH);
 
@@ -90,6 +92,12 @@ public class TelaAlertas extends JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Selecione um alerta para marcar como resolvido.");
             }
+        });
+
+        // Ação do novo botão
+        btnVoltar.addActionListener(e -> {
+            new TelaDashboard(usuario).setVisible(true);
+            dispose();
         });
 
         add(panel);

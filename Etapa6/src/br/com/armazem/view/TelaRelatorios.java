@@ -66,6 +66,17 @@ public class TelaRelatorios extends JFrame {
 
         panel.add(centerPanel, BorderLayout.CENTER);
 
+        JPanel bottomPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        JButton btnVoltar = new JButton("Voltar"); // Novo botão
+        bottomPanel.add(btnVoltar);
+        panel.add(bottomPanel, BorderLayout.SOUTH);
+
+        // Ação do novo botão
+        btnVoltar.addActionListener(e -> {
+            new TelaDashboard(usuario).setVisible(true);
+            dispose();
+        });
+
         add(panel);
 
         carregarRelatorios();

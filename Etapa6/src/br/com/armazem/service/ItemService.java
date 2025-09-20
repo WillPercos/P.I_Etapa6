@@ -32,4 +32,11 @@ public class ItemService {
     public void deletarItem(int id) throws SQLException {
         itemDAO.deletarItem(id);
     }
+    
+    public boolean isAbaixoDoPontoDeRessuprimento(Item item) {
+    if (item == null) {
+        throw new IllegalArgumentException("O item não pode ser nulo.");
+    }
+    return item.getQuantidade() < item.getPontoRessuprimento();
+}
 }

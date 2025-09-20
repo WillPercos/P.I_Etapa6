@@ -59,10 +59,17 @@ public class TelaPerfil extends JFrame {
 
         panel.add(infoPanel, BorderLayout.CENTER);
 
+        JPanel buttonPanel = new JPanel(); // Novo painel para os botões
         JButton btnSalvar = new JButton("Salvar");
         btnSalvar.setBackground(new Color(34, 139, 34));
         btnSalvar.setForeground(Color.WHITE);
-        panel.add(btnSalvar, BorderLayout.SOUTH);
+        JButton btnVoltar = new JButton("Voltar"); // Novo botão
+        btnVoltar.setBackground(new Color(105, 105, 105));
+        btnVoltar.setForeground(Color.WHITE);
+
+        buttonPanel.add(btnSalvar);
+        buttonPanel.add(btnVoltar); // Adiciona o novo botão
+        panel.add(buttonPanel, BorderLayout.SOUTH); // Adiciona o painel de botões
 
         carregarDadosFuncionario();
 
@@ -83,6 +90,12 @@ public class TelaPerfil extends JFrame {
             } catch (SQLException ex) {
                 JOptionPane.showMessageDialog(null, "Erro ao atualizar dados do funcionário: " + ex.getMessage());
             }
+        });
+
+        // Ação do novo botão
+        btnVoltar.addActionListener(e -> {
+            new TelaDashboard(usuario).setVisible(true);
+            dispose();
         });
 
         add(panel);
